@@ -1,6 +1,6 @@
-# build
+# build                            sudo docker image build -t arrowapi:latest -f ./ArrowApi.dockerfile .
 # publish => artifacts
-# run => .ddl/.exe
+# run => .ddl/.exe                 sudo docker run -p 5000:5000 arrowapi:latest
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 WORKDIR /app
