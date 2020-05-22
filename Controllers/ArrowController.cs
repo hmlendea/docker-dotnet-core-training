@@ -9,16 +9,16 @@ namespace ArrowApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class ArrowController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILogger<ArrowController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public ArrowController(ILogger<ArrowController> logger)
         {
             _logger = logger;
         }
