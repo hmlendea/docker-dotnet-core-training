@@ -35,5 +35,11 @@ namespace ArrowApi.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("info")]
+        public ActionResult Info(string user)
+        {
+            return Ok($"This is {user}");
+        }
     }
 }
